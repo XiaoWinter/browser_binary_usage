@@ -9,14 +9,22 @@
   <body>
     <img id="img1" src="./3.png" alt="" />
     <br />
+    <div>blob url 文本下载</div>
     <a id="downFile">下载文件</a>
+    <div>base64 -> dataURL 文本下载</div>
     <a id="downFile2">下载文件2</a>
+    <div>后端确定文件名称，直接下载</div>
     <a href="http://localhost:3000/textf">下载图片</a>
+    <div>路径确定文件名称，直接下载</div>
     <a href="http://localhost:3000/diana.png">下载图片2</a>
     <hr />
+    <div>文本流 解析内容</div>
     <button onclick="textBB()">textBB</button>
-    <button onclick="textBS()">textBS</button>
+    <div>文件流：axios 设置为 arraybuffer</div>
+    <button onclick="textBC()">textBC</button>
+    <div>文件流：axios 设置为Blob</div>
     <button onclick="textBSB()">textBSB</button>
+    <div>用canvas下载img</div>
     <button onclick="handleImgAndDownload()">下载图片3</button>
     <script
       src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"
